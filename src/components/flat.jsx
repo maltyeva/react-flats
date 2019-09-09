@@ -11,7 +11,9 @@ class Flat extends Component {
   }
 
   chooseFlat = () => {
-  console.log(this);
+  let lat = this.props.lat;
+  let lng = this.props.lng;
+  this.props.setMarker(lat, lng)
   this.setState({
     active: !this.state.active
   })
